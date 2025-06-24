@@ -13,7 +13,22 @@ A simple Spring Boot RESTful API to fetch insurance claim details using in-memor
   - `404 Not Found` if no claim exists for the given ID
 
 ---
+# Project Structure
 
+src/
+├── main/
+│   └── java/
+│       └── com/example/claims/
+│           ├── controller/
+│           │   └── ClaimController.java
+│           ├── model/
+│           │   ├── Claim.java
+│           │   └── ClaimStatus.java
+│           ├── service/
+│           │   └── ClaimService.java
+│           └── ClaimsApiApplication.java
+
+---
 ## Getting Started
 
 ### Prerequisites
@@ -30,6 +45,7 @@ A simple Spring Boot RESTful API to fetch insurance claim details using in-memor
 1. Open the project in IntelliJ
 2. Right-click `ClaimsApiApplication.java` → Run
 
+---
 #API Endpoint
 ## GET /Api/claims/{id}
 
@@ -48,21 +64,7 @@ A simple Spring Boot RESTful API to fetch insurance claim details using in-memor
 GET http://localhost:8080/api/claims/999
 
 ### Response: 404 Not Found
-# Project Structure
-
-src/
-├── main/
-│   └── java/
-│       └── com/example/claims/
-│           ├── controller/
-│           │   └── ClaimController.java
-│           ├── model/
-│           │   ├── Claim.java
-│           │   └── ClaimStatus.java
-│           ├── service/
-│           │   └── ClaimService.java
-│           └── ClaimsApiApplication.java
-
+---
 #Deploymnet 
 
 To deploy or share this project:

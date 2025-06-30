@@ -65,9 +65,4 @@ GET http://localhost:8080/api/claims/999
 
 ### Response: 404 Not Found
 ---
-#Deploymnet 
 
-To deploy or share this project:
-
-- Zip the entire folder
-- Or push it to GitHub
